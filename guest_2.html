@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>BreadcrumbList microdata demo by #Blondiecode</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="holder flex col">
+    <header>
+        <nav>
+            <ul class="flex row">
+                <li>
+                    <a href="./">Главная</a>
+                </li>
+                <li>
+                    <a href="super_star.html">Королева вечеринки</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Гензель</h1>
+        <ol class="flex row centered breadcrumbs">
+            <li>
+                <a href="./">
+                    <span>Домой</span>
+                </a>
+            <li>
+                <a href="./party.html">
+                    <span>Гости вечеринки</span>
+                </a>
+            <li>
+                <span>Гензель</span>
+            </li>
+        </ol>
+        <h2>Не сегодня, бабуля!</h2>
+        <div class="flex row centered buttons">
+            <div class="button">
+                <img src="./images/img8.jpg" alt="Гензель">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <small><a href="https://www.youtube.com/c/AidaDrogan" target="_blank">by #BlondieCode © 2020</a></small> |
+        <small><a href="https://pixabay.com/" target="_blank">Картинки © pixabay.com</a></small>
+    </footer>
+</div>
+<script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement":
+ [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item":
+   {
+    "@id": "https://example.com/",
+    "name": "Главная"
+    }
+  },
+  {
+   "@type": "ListItem",
+  "position": 2,
+  "item":
+   {
+     "@id": "https://example.com/party.html",
+     "name": "Вечеринка"
+   }
+  },
+  {
+   "@type": "ListItem",
+  "position": 3,
+  "item":
+   {
+     "@id": "https://example.com/guest_2.html",
+     "name": "Борьба с огнём"
+   }
+  }
+ ]
+}
+</script>
+</body>
+</html>

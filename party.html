@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>BreadcrumbList microdata demo by #Blondiecode</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="holder flex col">
+    <header>
+        <nav>
+            <ul class="flex row">
+                <li>
+                    <a href="./">Главная</a>
+                </li>
+                <li>
+                    <a href="super_star.html">Королева вечеринки</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Вечеринка в пряничном домике!</h1>
+        <ol vocab="http://schema.org/" typeof="BreadcrumbList" class="flex row centered breadcrumbs">
+            <li property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" href="./">
+                    <span property="name">Домой</span>
+                </a>
+                <meta property="position" content="1"></li>
+            <li property="itemListElement" typeof="ListItem">
+                <span property="name">Гости вечеринки</span>
+                <meta property="item" content="./party.html">
+                <meta property="position" content="2">
+            </li>
+        </ol>
+        <h2>Наши специальные гости</h2>
+        <div class="flex row centered buttons">
+            <a href="./guest_2.html">
+                <div class="button">
+                    <h3>Гензель</h3>
+                    <img src="./images/img2.jpg" alt="Вкусняшка">
+                </div>
+            </a>
+            <a href="./guest_1.html">
+                <div class="button">
+                    <h3>Гретель</h3>
+                    <img src="./images/img1.jpg" alt="Вкусняшка">
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <small><a href="https://www.youtube.com/c/AidaDrogan" target="_blank">by #BlondieCode © 2020</a></small> |
+        <small><a href="https://pixabay.com/" target="_blank">Картинки © pixabay.com</a></small>
+    </footer>
+</div>
+</body>
+</html>
